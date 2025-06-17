@@ -123,10 +123,28 @@
     .Suporte p{
       text-align: center;
     }
-    .nome{
+    .informaçoes{
       display: inline-block;
       background-color: white;
       border-radius: 10%;
+      margin-left: 60%;
+      font-size: larger;
+    }
+    .informaçoes input{
+      border-radius: 20px;
+      width: 600px;
+      height: 60px;
+    }
+    .informaçoes button{
+      background-color: #bde4d1;
+      border-radius: 20px;
+      padding: 20px;
+      width: 120px;
+      border: transparent;
+      font-size: larger;
+    }
+    .ajuda input{
+      height: 350px;
     }
   </style>
 </head>
@@ -165,10 +183,25 @@
     <p>Entre em contato</p>
     <p>Precisa de ajuda, quer fazer uma reclamação ou relatar um erro?</p>
     <p>Fale conosco!</p>
+  <div class="informaçoes">
     <div class="nome">
       <p>Seu nome</p>
       <input>
     </div>
+    <div class="sobrenome">
+      <p>Seu sobrenome</p>
+      <input>
+    </div>
+    <div class="email">
+      <p>Seu email</p>
+      <input type="email">
+    </div>
+    <div class="ajuda">
+      <p>Como podemos ajudar?</p>
+      <input>
+    </div>
+    <button>Enviar</button>
+  </div>
   </div>
 
   <!-- Footer -->
