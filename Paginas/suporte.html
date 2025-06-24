@@ -129,11 +129,15 @@
       border-radius: 10%;
       margin-left: 60%;
       font-size: larger;
+      border-color: gray;
+      border-style: solid;
     }
     .informaçoes input{
       border-radius: 20px;
       width: 600px;
       height: 60px;
+      border-color: gray;
+      border-style: solid;
     }
     .informaçoes button{
       background-color: #bde4d1;
@@ -142,9 +146,19 @@
       width: 120px;
       border: transparent;
       font-size: larger;
+      display: inline-block;
+    }
+    .informaçoes button :hover{
+      box-shadow: #1b1b1b;
     }
     .ajuda input{
       height: 350px;
+    }
+    .nomecompleto{
+      display: inline-flex;
+    }
+    .nomecompleto input{
+      width: 300px;
     }
   </style>
 </head>
@@ -184,6 +198,7 @@
     <p>Precisa de ajuda, quer fazer uma reclamação ou relatar um erro?</p>
     <p>Fale conosco!</p>
   <div class="informaçoes">
+  <div class="nomecompleto">
     <div class="nome">
       <p>Seu nome</p>
       <input>
@@ -192,6 +207,7 @@
       <p>Seu sobrenome</p>
       <input>
     </div>
+  </div>
     <div class="email">
       <p>Seu email</p>
       <input type="email">
