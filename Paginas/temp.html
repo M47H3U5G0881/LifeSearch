@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Life Search</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 60px;
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .search-box {
+      flex: 1;
+      margin: 0 30px;
+      position: relative;
+      max-width: 600px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 12px 45px 12px 20px;
+      border: 2px solid #ccc;
+      border-radius: 999px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .search-box::after {
+      content: '🔍';
+      position: absolute;
+      right: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      pointer-events: none;
+    }
+
+    /* PROMOÇÕES */
+    .promos {
+      padding: 40px 60px;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .promo {
+      background-color: #e7f0ff;
+      border-radius: 20px;
+      padding: 30px 20px;
+      text-align: center;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    /* CATEGORIAS */
+    .categorias {
+      padding: 20px 60px;
+    }
+
+    .categorias h2 {
+      font-size: 22px;
+      margin-bottom: 25px;
+    }
+
+    .categorias-grid {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .categoria {
+      width: 100px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .categoria .icone {
+      width: 80px;
+      height: 80px;
+      background-color: #e3f6f4;
+      border-radius: 50%;
+      margin: 0 auto 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* BENEFÍCIOS */
+    .beneficios {
+      padding: 40px 60px;
+      background-color: #f7f7f7;
+    }
+
+    .beneficios h2 {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .beneficios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .beneficio {
+      background: linear-gradient(135deg, #f0f4ff, #dbeaff);
+      border-radius: 15px;
+      padding: 25px 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    /* LOJAS */
+    .lojas {
+      padding: 40px 60px;
+    }
+
+    .lojas h2 {
+      font-size: 22px;
+      margin-bottom: 25px;
+    }
+
+    .lojas-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .loja {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #ccc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* RODAPÉ */
+    footer {
+      background-color: #1b1b1b;
+      color: #fff;
+      padding: 50px 60px;
+    }
+
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .footer-col {
+      min-width: 180px;
+    }
+
+    .footer-col h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .footer-col p {
+      font-size: 14px;
+      margin: 6px 0;
+    }
+
+    .redes {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .rede {
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+
+      .search-box {
+        margin: 20px 0;
+        width: 100%;
+      }
+
+      .categorias-grid, .lojas-grid {
+        justify-content: center;
+      }
+
+      footer {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <img src="#" alt="Logo"> Life Search
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Buscar produtos, lojas...">
+    </div>
+  </header>
+
+  <!-- Promoções -->
+  <section class="promos">
+    <div class="promo">Ofertas Relâmpago</div>
+    <div class="promo">Cupons de Desconto</div>
+    <div class="promo">Mais Buscados</div>
+    <div class="promo">Celulares em Alta</div>
+    <div class="promo">Monte seu Setup</div>
+    <div class="promo">Cozinha Equipada</div>
+  </section>
+
+  <!-- Categorias -->
+  <section class="categorias">
+    <h2>Categorias</h2>
+    <div class="categorias-grid">
+      <div class="categoria"><div class="icone"></div>Roupas</div>
+      <div class="categoria"><div class="icone"></div>Tecnologia</div>
+      <div class="categoria"><div class="icone"></div>Itens de Cozinha</div>
+      <div class="categoria"><div class="icone"></div>Móveis</div>
+      <div class="categoria"><div class="icone"></div>Brinquedos</div>
+      <div class="categoria"><div class="icone"></div>Cosméticos</div>
+      <div class="categoria"><div class="icone"></div>Decoração</div>
+      <div class="categoria"><div class="icone"></div>Games</div>
+      <div class="categoria"><div class="icone"></div>Livros</div>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section class="beneficios">
+    <h2>Benefícios exclusivos</h2>
+    <div class="beneficios-grid">
+      <div class="beneficio">Produtos até R$100</div>
+      <div class="beneficio">Frete Grátis</div>
+      <div class="beneficio">Lançamentos</div>
+      <div class="beneficio">Presentes especiais</div>
+    </div>
+  </section>
+
+  <!-- Lojas -->
+  <section class="lojas">
+    <h2>Principais Lojas</h2>
+    <div class="lojas-grid">
+      <div class="loja"></div>
+      <div class="loja"></div>
+      <div class="loja"></div>
+      <div class="loja"></div>
+      <div class="loja"></div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Life Search</h3>
+        <p>A melhor busca por ofertas e lojas em um só lugar.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Sobre</h3>
+        <p>Quem somos</p>
+        <p>Termos de uso</p>
+        <p>Carreiras</p>
+      </div>
+      <div class="footer-col">
+        <h3>Categorias</h3>
+        <p>Eletrônicos</p>
+        <p>Casa</p>
+        <p>Moda</p>
+      </div>
+      <div class="footer-col">
+        <h3>Redes</h3>
+        <div class="redes">
+          <div class="rede"></div>
+          <div class="rede"></div>
+          <div class="rede"></div>
+          <div class="rede"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
