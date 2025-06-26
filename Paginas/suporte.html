@@ -122,6 +122,7 @@
     }
     .Suporte p{
       text-align: center;
+      display: flex;
     }
     .informaçoes{
       display: inline-block;
@@ -131,6 +132,7 @@
       font-size: larger;
       border-color: gray;
       border-style: solid;
+      margin-top: 5%;
     }
     .informaçoes input{
       border-radius: 20px;
@@ -146,19 +148,23 @@
       width: 120px;
       border: transparent;
       font-size: larger;
-      display: inline-block;
     }
-    .informaçoes button :hover{
-      box-shadow: #1b1b1b;
+    .texto{
+      margin-top: -30%;
+      margin-right: 50%;
+      font-size: 20px;
     }
-    .ajuda input{
+    .ajuda textarea{
       height: 350px;
+      width: 602px;
+      border-radius: 20px;
+      border: solid 2px gray;
     }
     .nomecompleto{
       display: inline-flex;
     }
     .nomecompleto input{
-      width: 300px;
+      width: 296px;
     }
   </style>
 </head>
@@ -194,9 +200,6 @@
   </header>
 
   <div class="Suporte">
-    <p>Entre em contato</p>
-    <p>Precisa de ajuda, quer fazer uma reclamação ou relatar um erro?</p>
-    <p>Fale conosco!</p>
   <div class="informaçoes">
   <div class="nomecompleto">
     <div class="nome">
@@ -214,9 +217,14 @@
     </div>
     <div class="ajuda">
       <p>Como podemos ajudar?</p>
-      <input>
+      <textarea style="resize: none"></textarea>
     </div>
     <button>Enviar</button>
+  </div>
+  <div class="texto">
+    <p>Entre em contato</p>
+    <p>Precisa de ajuda, quer fazer uma reclamação ou relatar um erro?</p>
+    <p>Fale conosco!</p>
   </div>
   </div>
 
