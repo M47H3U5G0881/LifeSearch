@@ -72,7 +72,7 @@
       height: 16px;
     }
     footer {
-      margin-top: 30%;
+      margin-top: 3%;
       background-color: #1b1b1b;
       color: white;
       padding: 40px 60px;
@@ -120,6 +120,9 @@
       cursor: pointer;
       border-radius: 100%;
     }
+    .Suporte{
+      margin-top: 10%;
+    }
     .Suporte p{
       text-align: center;
       display: flex;
@@ -132,7 +135,8 @@
       font-size: larger;
       border-color: gray;
       border-style: solid;
-      margin-top: 5%;
+      margin-top: -31%;
+      justify-content: center;
     }
     .informaçoes input{
       border-radius: 20px;
@@ -140,6 +144,7 @@
       height: 60px;
       border-color: gray;
       border-style: solid;
+      font-size: large;
     }
     .informaçoes button{
       background-color: #bde4d1;
@@ -148,25 +153,40 @@
       width: 120px;
       border: transparent;
       font-size: larger;
+      margin: 5px;
+      margin-left: 250px;
     }
-    .texto{
-      margin-top: -30%;
-      margin-right: 50%;
-      font-size: 20px;
+    .nomecompleto{
+      display: inline-flex;
+      margin-top: 5%;
+    }
+    .nomecompleto input{
+      width: 296px;
     }
     .ajuda textarea{
       height: 350px;
       width: 602px;
       border-radius: 20px;
       border: solid 2px gray;
+      font-size: larger;
     }
-    .nomecompleto{
-      display: inline-flex;
+    .texto{
+      margin-right: 45%;
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
-    .nomecompleto input{
-      width: 296px;
+    .entre{
+      font-size: 80px;
+      font-style: oblique;
     }
-  </style>
+    .fale{
+      font-size: 44px;
+      text-decoration: underline;
+    }
+    </style>
 </head>
 <body>
 
@@ -199,7 +219,14 @@
     </div>
   </header>
 
+  <!-- Suporte -->
   <div class="Suporte">
+    <div class="texto">
+      <strong class="entre">Entre em contato</strong>
+      <p class="precisa">Precisa de ajuda, quer fazer uma </p>
+      <p class="reclamação">reclamação ou relatar um erro?</p>
+      <p class="fale">Fale conosco!</p>
+    </div>
   <div class="informaçoes">
   <div class="nomecompleto">
     <div class="nome">
@@ -220,11 +247,6 @@
       <textarea style="resize: none"></textarea>
     </div>
     <button>Enviar</button>
-  </div>
-  <div class="texto">
-    <p>Entre em contato</p>
-    <p>Precisa de ajuda, quer fazer uma reclamação ou relatar um erro?</p>
-    <p>Fale conosco!</p>
   </div>
   </div>
 
