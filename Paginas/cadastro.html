@@ -11,33 +11,31 @@
       background-color: rgb(181, 219, 203);
     }
     .Logo{
-        border-radius: 100%;
-        width: 100px;
-        height: 100px;
+      display: flex;
+      flex: content;
     }
-    .Login{
-        display: inline-block;
-        background-color: white;
-        border-radius: 10%;
-        font-size: larger;
-        justify-content: center;
+    .logo{
+      border-radius: 100%;
+      width: 150px;
+      height: 150px;
     }
     .Cadastro{
-      margin-top: 10%;
+      margin-top: 5%;
       background-color: white;
       border-radius: 10%;
       font-size: larger;
       justify-content: center;
       display: inline-block;
+      padding: 10px;
     }
     .Cadastro strong{
         font-size: 50px;
     }
     .Cadastro input{
-      border-radius: 20px;
+      border-radius: 50px;
       width: 600px;
       height: 60px;
-      border-color: gray;
+      border-color: black;
       border-style: solid;
       font-size: large;
       margin: 20px;
@@ -49,37 +47,32 @@
       width: 150px;
       border: transparent;
       font-size: larger;
-      margin: 100px;
-      margin-left: 30%;
-      
+      margin: 30px;
     }
     </style>
 </head>
 <body>
-
-    <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOjjKU-f7z7hJE6sIjsuhf-r3Nd3JPnpskIoRbRpIrFBp5H5y5_bjiY7Jp2v4N01oOVYcgPUMLIV0U8kXa2_3ZEPuKtrVAqG2RgKnXvNBE8LLs=w1905-h960" alt="" class="Logo">
-
-    <!-- Login -->
-    <div class="Login">
-        
-    </div>
-
-    <!-- Cadastro -->
-  <div class="Cadastro">
-    <strong>Cadastro</strong>
-    <div class="nome">
-      <input type="text" placeholder="Nome de Usuário">
-    </div>
-    <div class="email">
-      <input type="email" placeholder="E-mail">
-    </div>
-    <div class="senha">
-      <input type="password" placeholder="Senha">
-      <br>
-      <input type="password" placeholder="Repita sua senha">
-    </div>
-    <button>Confirmar</button>
+  <div class="Logo">
+    <img src="https://i.imgur.com/phfDxjL.png" class="logo" alt="logo">
+    <strong>Life Search</strong>
   </div>
-
+    <!-- Cadastro -->
+    <center>
+      <div class="Cadastro">
+        <strong>Cadastro</strong>
+        <div class="nome">
+          <input type="text" placeholder="Nome de Usuário">
+        </div>
+        <div class="email">
+          <input type="email" placeholder="E-mail">
+        </div>
+        <div class="senha">
+          <input type="password" placeholder="Senha">
+          <br>
+          <input type="password" placeholder="Repita sua senha">
+        </div>
+        <button>Confirmar</button>
+      </div>
+    </center>
 </body>
 </html>
