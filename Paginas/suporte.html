@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+=<!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
@@ -10,69 +10,59 @@
       font-family: Arial, sans-serif;
       background-color: rgb(181, 219, 203);
     }
-    header {
+    .Logo{
       display: flex;
+      flex: content;
+      justify-content: center;
       align-items: center;
-      justify-content: space-between;
-      padding: 10px 20px;
-      background-color: #fff;
+      font-size: 70px;
+      margin-top: 5%;
     }
-    .left {
-      display: flex;
+    .logo{
+      border-radius: 100%;
+      width: 150px;
+      height: 150px;
+      background-color: white;
+    }
+    .Cadastro{
+      margin-top: 5%;
+      background-color: white;
+      border-radius: 10%;
+      font-size: larger;
+      display: inline-block;
+      padding: 10px;
+      text-align: center;
       align-items: center;
-      gap: 8px;
-      font-weight: bold;
-      font-size: 16px;
+      justify-content: center;
     }
-    .left img {
-      width: 32px;
-      height: 32px;
+    .Cadastro strong{
+        font-size: 50px;
     }
-    .search-container {
-      flex-grow: 1;
-      display: flex;
-      align-items: center;
-      margin: 0 20px;
-      position: relative;
+    .Cadastro input{
+      border-radius: 50px;
+      width: 600px;
+      height: 60px;
+      border-color: black;
+      border-style: solid;
+      font-size: large;
+      margin: 20px;
     }
-    .search-container input {
-      width: 100%;
-      padding: 8px 35px 8px 15px;
-      border: none;
-      background-color: #f1f1f1;
+    .Cadastro button{
+      background-color: #bde4d1;
       border-radius: 20px;
-      font-size: 14px;
-      outline: none;
+      padding: 20px;
+      width: 150px;
+      border: transparent;
+      font-size: larger;
+      margin: 30px;
     }
-    .search-container .search-icon {
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
+    .Cadastro a{
+      margin-left: 200px;
+      color: rgb(51, 51, 51);
+      font-size: smaller;
     }
-    .search-container .search-icon img {
-      width: 16px;
-      height: 16px;
-    }
-    .right {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 14px;
-    }
-    .right span {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      cursor: pointer;
-    }
-    .right img {
-      width: 16px;
-      height: 16px;
-    }
-    footer {
-      margin-top: 3%;
+        footer {
+      margin-top: 10%;
       background-color: #1b1b1b;
       color: white;
       padding: 40px 60px;
@@ -120,144 +110,36 @@
       cursor: pointer;
       border-radius: 100%;
     }
-    .Suporte{
-      margin-top: 10%;
-    }
-    .Suporte p{
-      text-align: center;
-      display: flex;
-    }
-    .Suporte strong{
-      text-align: center;
-      display: flex;
-      margin: 10px;
-    }
-    .informaçoes{
-      display: inline-block;
-      background-color: white;
-      border-radius: 10%;
-      margin-left: 60%;
-      font-size: larger;
-      border-color: gray;
-      border-style: solid;
-      margin-top: -31%;
-      justify-content: center;
-      padding: 15px;
-    }
-    .informaçoes input{
-      border-radius: 20px;
-      width: 600px;
-      height: 60px;
-      border-color: gray;
-      border-style: solid;
-      font-size: large;
-      margin: 5px;
-    }
-    .informaçoes button{
-      background-color: #bde4d1;
-      border-radius: 20px;
-      padding: 20px;
-      width: 120px;
-      border: transparent;
-      font-size: larger;
-      margin: 5px;
-      margin-left: 250px;
-    }
-    .nomecompleto{
-      display: inline-flex;
-      margin-top: 5%;
-    }
-    .nomecompleto input{
-      width: 290px;
-    }
-    .ajuda textarea{
-      height: 350px;
-      width: 602px;
-      border-radius: 20px;
-      border: solid 2px gray;
-      font-size: larger;
-    }
-    .texto{
-      margin-right: 45%;
-      font-size: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-    .entre{
-      font-size: 80px;
-      font-style: oblique;
-    }
-    .fale{
-      font-size: 44px;
-      text-decoration: underline;
-    }
     </style>
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <div class="left">
-      <img src="https://i.imgur.com/phfDxjL.png" alt="logo">
-      <span>Life Search</span>
-    </div>
-
-    <div class="search-container">
-      <input type="text" placeholder="Pesquisar">
-      <div class="search-icon">
-        <img src="https://i.imgur.com/xg63cmi.png" alt="Menu">
+  <div class="Logo">
+    <img src="https://i.imgur.com/phfDxjL.png" class="logo" alt="logo">
+    <strong>Life Search</strong>
+  </div>
+    <!-- Cadastro -->
+    <center>
+      <div class="Cadastro">
+        <div>
+        <strong>Cadastro</strong>
+        </div>
+        <div class="nome">
+          <input type="text" placeholder="Nome de Usuário">
+        </div>
+        <div class="email">
+          <input type="email" placeholder="E-mail">
+        </div>
+        <div class="senha">
+          <input type="password" placeholder="Senha">
+          <br>
+          <input type="password" placeholder="Repita sua senha">
+        </div>
+        <button>Confirmar</button>
+        
+        <a href="">Já tem uma conta? Clique aqui.</a>
       </div>
-    </div>
-
-    <div class="right">
-      <span>
-        <img src="https://i.imgur.com/vXYiupN.png" alt="Favoritos">
-        Favoritos
-      </span>
-      <span>
-        <img src="https://i.imgur.com/7VqzATQ.png" alt="Login">
-        Login
-      </span>
-      <span>
-        <img src="https://i.imgur.com/M8JOEf7.png" alt="Carrinho">
-      </span>
-    </div>
-  </header>
-
-  <!-- Suporte -->
-  <div class="Suporte">
-    <div class="texto">
-      <strong class="entre">Entre em contato</strong>
-      <p class="precisa">Precisa de ajuda, quer fazer uma </p>
-      <p class="reclamação">reclamação ou relatar um erro?</p>
-      <p class="fale">Fale conosco!</p>
-    </div>
-  <div class="informaçoes">
-  <div class="nomecompleto">
-    <div class="nome">
-      <strong>Seu nome</strong>
-      <input>
-    </div>
-    <div class="sobrenome">
-      <strong>Seu sobrenome</strong>
-      <input>
-    </div>
-  </div>
-    <div class="email">
-      <strong>Seu email</strong>
-      <input type="email">
-    </div>
-    <div class="ajuda">
-      <strong>Como podemos ajudar?</strong>
-      <textarea style="resize: none"></textarea>
-    </div>
-    <button>Enviar</button>
-  </div>
-  </div>
-
-  <!-- Footer -->
+    </center>
+      <!-- Footer -->
   <footer>
     <div class="footer-container">
       <div class="footer-section logo-desc">
@@ -295,6 +177,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
