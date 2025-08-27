@@ -10,14 +10,22 @@
       font-family: Arial, sans-serif;
       background-color: rgb(181, 219, 203);
     }
+    .voltar{
+      width: 10%;
+      height: 10%;
+      background-color: white;
+    }
     .Logo{
-      display: flex;
-      flex: content;
+      display: block;
+    }
+    .Logo strong{
+      font-size: 400%;
     }
     .logo{
       border-radius: 100%;
       width: 150px;
       height: 150px;
+      background-color: white;
     }
     .Cadastro{
       margin-top: 5%;
@@ -48,16 +56,22 @@
       border: transparent;
       font-size: larger;
       margin: 30px;
+      margin-right: 30%;
+    }
+    .Cadastro a {
+      font-size: smaller;
+      color: gray;
     }
     </style>
 </head>
 <body>
+  <img src="https://cdn-icons-png.flaticon.com/512/58/58887.png" alt="voltar" id="voltar" class="voltar">
+  <center>
   <div class="Logo">
     <img src="https://i.imgur.com/phfDxjL.png" class="logo" alt="logo">
     <strong>Life Search</strong>
   </div>
     <!-- Cadastro -->
-    <center>
       <div class="Cadastro">
         <strong>Cadastro</strong>
         <div class="nome">
@@ -72,6 +86,7 @@
           <input type="password" placeholder="Repita sua senha">
         </div>
         <button>Confirmar</button>
+        <a href="">Já tem uma conta? Clique aqui.</a>
       </div>
     </center>
 </body>
