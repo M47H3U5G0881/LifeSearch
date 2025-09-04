@@ -11,12 +11,16 @@
       background-color: rgb(181, 219, 203);
     }
     .voltar{
-      width: 10%;
-      height: 10%;
+      width: 3%;
       background-color: white;
+      border-radius: 100%;
+      margin: 15px;
+      margin-top: -5px;
+      position: absolute;
     }
     .Logo{
-      display: block;
+      justify-content: center;
+      margin-top: 1%;
     }
     .Logo strong{
       font-size: 400%;
@@ -27,8 +31,12 @@
       height: 150px;
       background-color: white;
     }
+    .name-logo{
+      position: relative;
+      top: -45px;
+    }
     .Cadastro{
-      margin-top: 5%;
+      margin-top: 2%;
       background-color: white;
       border-radius: 10%;
       font-size: larger;
@@ -37,7 +45,7 @@
       padding: 10px;
     }
     .Cadastro strong{
-        font-size: 50px;
+      font-size: 50px;
     }
     .Cadastro input{
       border-radius: 50px;
@@ -62,6 +70,56 @@
       font-size: smaller;
       color: gray;
     }
+    footer {
+      margin-top: 3%;
+      background-color: #1b1b1b;
+      color: white;
+      padding: 40px 60px;
+    }
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .footer-section {
+      flex: 1;
+      margin: 0 20px;
+      min-width: 200px;
+    }
+    .footer-section h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .footer-section p {
+      margin: 6px 0;
+      font-size: 14px;
+      color: #fff;
+    }
+    .footer-logo {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+    .logo-desc h3 {
+      margin: 10px 0 10px;
+    }
+    .logo-desc p {
+      font-size: 14px;
+      max-width: 300px;
+    }
+    .social-icons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+    .social-icons img {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      border-radius: 100%;
+    }
+
     </style>
 </head>
 <body>
@@ -69,25 +127,63 @@
   <center>
   <div class="Logo">
     <img src="https://i.imgur.com/phfDxjL.png" class="logo" alt="logo">
-    <strong>Life Search</strong>
+    <strong class="name-logo">Life Search</strong>
   </div>
     <!-- Cadastro -->
       <div class="Cadastro">
         <strong>Cadastro</strong>
         <div class="nome">
-          <input type="text" placeholder="Nome de Usuário">
+          <input type="text" placeholder=" Nome de Usuário">
         </div>
         <div class="email">
-          <input type="email" placeholder="E-mail">
+          <input type="email" placeholder=" E-mail">
         </div>
         <div class="senha">
-          <input type="password" placeholder="Senha">
+          <input type="password" placeholder=" Senha">
           <br>
-          <input type="password" placeholder="Repita sua senha">
+          <input type="password" placeholder=" Repita sua senha">
         </div>
         <button>Confirmar</button>
         <a href="">Já tem uma conta? Clique aqui.</a>
       </div>
     </center>
+    <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section logo-desc">
+        <img src="https://imgur.com/EcLlMvI.png" alt="logo" class="footer-logo" />
+        <h3>Life Search</h3>
+        <p>
+          Life Search é a plataforma ideal para encontrar ofertas e produtos das melhores lojas.
+          Navegue por diversas categorias e descubra preços acessíveis com facilidade!
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Sobre</h3>
+        <p>Sobre o Life Search</p>
+        <p>Informações corporativas</p>
+        <p>Acessibilidade</p>
+        <p>Termos de Uso</p>
+        <p>Carreiras</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Categorias</h3>
+        <p>Eletrônicos</p>
+        <p>Roupas e vestimenta</p>
+        <p>Casa e cozinha</p>
+        <p>Beleza e cuidados</p>
+        <p>Livros</p>
+      </div>
+
+      <div class="footer-section social-icons">
+        <img src="https://as1.ftcdn.net/jpg/05/43/34/74/1000_F_543347499_xe1jxIljb6KyJErJYZw5FoEdNVmfWy11.jpg" alt="Facebook" />
+        <img src="https://img.freepik.com/vetores-premium/logotipo-de-midia-social-de-contorno-preto_197792-2416.jpg?semt=ais_hybrid&w=740" alt="Instagram" />
+        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/19490753-logotipo-preto-do-twitter-de-icone-preto-do-twitter-livre-de-simbolo-do-twitter-gratis-vetor.jpg" alt="Twitter" />
+        <img src="https://w7.pngwing.com/pngs/902/874/png-transparent-computer-icons-linkedin-black-icon-miscellaneous-angle-text-thumbnail.png" alt="LinkedIn" />
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
