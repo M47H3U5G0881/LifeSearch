@@ -36,7 +36,7 @@
       top: -45px;
     }
     .Login{
-      margin-top: 2%;
+      margin-top: 1%;
       background-color: white;
       border-radius: 10%;
       font-size: larger;
@@ -56,7 +56,7 @@
       font-size: large;
       margin: 20px;
     }
-    .Login button{
+    .Confirmar{
       background-color: #bde4d1;
       border-radius: 20px;
       padding: 20px;
@@ -73,19 +73,33 @@
     .botoes{
       display: flex;
       justify-content: space-around;
-      width: 0%;
+      width: 30%;
       margin: auto;
-      margin-right: 80%;
-      background-color: blue;
-      border: solid gray;
       border-radius: 50%;
-      padding: 20px;
+      margin-top: 1%;
     }
     .botoes button{
       background-color: white;
-      background-image: src = "https://img.icons8.com/?size=512&id=17949&format=png";
       border: solid black;
       border-radius: 0%;
+    }
+    .Google{
+      width: 50px;
+      height: 50px;
+    }
+    .Twitter{
+      width: 50px;
+      height: 50px;
+    }
+    .Facebook{
+      width: 50px;
+      height: 50px;
+    }
+    .button1{
+      border-radius: ;
+    }
+    .button3{
+      border-radius: ;
     }
     footer {
       margin-top: 3%;
@@ -136,7 +150,6 @@
       cursor: pointer;
       border-radius: 100%;
     }
-
     </style>
 </head>
 <body>
@@ -147,13 +160,19 @@
     <strong class="name-logo">Life Search</strong>
   </div>
     <!-- Login -->
-      <div class="Login">
-        <strong>Entrar com:</strong>
+    <div class="Login">
+      <strong>Entrar com:</strong>
         <br>
         <div class="botoes">
-          <button></button>
-          <button></button>
-          <button></button>
+          <button class="button1">
+            <img src="https://agenciapnz.com/wp-content/uploads/Logo-Google-G.png" alt="Google" class="Google">
+          </button>
+          <button class="button2">
+            <img src="https://marketplace.canva.com/1dvDE/MAGdo51dvDE/1/tl/canva-minimalist-logo-design-of-MAGdo51dvDE.png" alt="Twitter" class="Twitter">
+          </button>
+          <button class="button3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="Facebook" class="Facebook">
+          </button>
         </div>
         <br>
         <strong>Login</strong>
@@ -163,7 +182,7 @@
         <div class="senha">
           <input type="password" placeholder=" Senha">
         </div>
-        <button>Confirmar</button>
+        <button class="Confirmar">Confirmar</button>
         <a href="">Não tem uma conta? Clique aqui.</a>
       </div>
     </center>
