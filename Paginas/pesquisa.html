@@ -71,7 +71,7 @@
       height: 16px;
     }
     .voltar{
-      width: 1.5%;
+      width: 30px;
       background-color: white;
       border-radius: 100%;
       margin: 22px;
@@ -89,18 +89,58 @@
       border-radius: 10px;
       padding: 10px;
       margin: 50px;
+      margin-bottom: 30px;
     }
     .Filtro{
-      justify-content: center;
+      display: flex;
+      align-items: center;
       font-size: larger;
       background-color: white;
       border-radius: 15px;
+      height: 60px;
+      margin-left: 50px;
     }
     .Funil{
       width: 30px;
+      margin-right: 10px;
+    }
+    .Ordem{
+      border-top: solid grey;
+      margin: 50px;
+      margin-top: 10px;
+      height: 50px;
+      align-content: center;
+    }
+    .Ordem select{
+      border-radius: 10px;
+      height: 40px;
+    }
+    .QuadroProduto{
+      border: solid grey;
+      margin-left: 50px;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: left;
+    }
+    .coração{
+      width: 30px;
+      margin-left: 93%;
+      margin-top: -10%;
+    }
+    .Produto{
+      width: 200px;
+    }
+    .QuadroProduto p{
+      margin-bottom: auto;
+    }
+    .nome{
+      font-size: larger;
+    }
+    .Comparação{
+      text-align: center;
     }
     footer {
-      margin-top: 30%;
+      margin-top: 50px;
       background-color: #1b1b1b;
       color: white;
       padding: 40px 60px;
@@ -181,7 +221,7 @@
     </div>
   </header>
   <!-- Pesquisa -->
-   <div class="Pesquisa">
+  <div class="Pesquisa">
     <div class="VCpesquisou">
       <p>Você pesquisou</p>
       <strong id="Item">"Item Pesquisado"</strong>
@@ -190,7 +230,27 @@
       <img src="https://cdn-icons-png.flaticon.com/512/116/116878.png" alt="Filtro" class="Funil">
       Filtros
     </button>
-   </div>
+    <div class="Ordem">
+    <label for="Resultados">Mais de X resultados encontrados | </label>
+    <select id="Ordem" name="Ordem">
+      <option value="Mais relevantes">Mais relevantes</option>
+      <option value="Em destaque">Em destaque</option>
+      <option value="Mais recentes">Mais recentes</option>
+      <option value="Preço">Preço ⬆</option>
+      <option value="Preço">Preço ⬇</option>
+    </select>
+    </div>
+    <button class="QuadroProduto">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="coração" id="coração" class="coração">
+      <br>
+      <img src="https://cdn-icons-png.flaticon.com/512/2117/2117661.png" alt="Produto" id="Produto" class="Produto">
+      <br>
+      <strong class="nome">Nome do produto</strong>
+      <p>Menor preço:</p>
+      <strong>R$0,00</strong>
+      <p class="Comparação">Compare em X lojas</p>
+    </button>
+  </div>
   <!-- Footer -->
   <footer>
     <div class="footer-container">
@@ -229,6 +289,10 @@
       </div>
     </div>
   </footer>
-
 </body>
+<script>
+  <!-- Links do icone de coração -->
+  var coração1 = "https://cdn-icons-png.flaticon.com/512/1077/1077035.png"
+  var coração2 = "https://cdn-icons-png.flaticon.com/512/2107/2107774.png"
+</script>
 </html>
