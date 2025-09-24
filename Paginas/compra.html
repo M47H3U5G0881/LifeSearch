@@ -70,19 +70,27 @@
       width: 16px;
       height: 16px;
     }
+    .Compra{
+      display: flex;
+      justify-content: space-around;
+    }
     .Informações{
         justify-items: center;
         display: inline-block;
         margin: 50px;
         font-size: larger;
     }
+    .Informações img{
+      width: 300px;
+      height: 300px;
+    }
     .star-class {
         display: flex;
     }
     .star-button {
-      width: 50px; /* Largura da estrela */
-      height: 50px; /* Altura da estrela */
-      background-color: gold; /* Cor de fundo da estrela */
+      width: 50px;
+      height: 50px;
+      background-color: gold;
       clip-path: polygon(
         50% 0%,
         61% 35%,
@@ -94,12 +102,24 @@
         32% 57%,
         2% 35%,
         39% 35%
-      ); /* Define os pontos da estrela */
-      border: none; /* Remove a borda padrão */
-      cursor: pointer; /* Adiciona um cursor de ponteiro */
+      );
+      border: none;
+      cursor: pointer;
+    }
+    .Preço{
+      margin-top: 50px;
+      align-items: center;
+      font-size: 60px;
+    }
+    .Preço button{
+      font-size: 30px;
+      border: transparent;
+      border-radius: 20px;
+      height: 80px;
+      background-color: #bde4d1;
     }
     footer {
-      margin-top: 30%;
+      margin-top: 50px;
       background-color: #1b1b1b;
       color: white;
       padding: 40px 60px;
@@ -180,21 +200,24 @@
     </div>
   </header>
   <!-- compra -->
-   <div class="Informações">
-       <strong>Nome do produto</strong>
-       <br>
-       <img src="https://cdn-icons-png.flaticon.com/512/2117/2117661.png" alt="Nome">
-       <div class="star-class">
-           <button class="star-button"></button>
-           <button class="star-button"></button>
-           <button class="star-button"></button>
-           <button class="star-button"></button>
-           <button class="star-button"></button>
-       </div>
-   </div>
-   <div>
-    <strong>R$0,00</strong>
-    <button>Comparar em X lojas</button>
+   <div class="Compra">
+     <div class="Informações">
+         <strong>Nome do produto</strong>
+         <br>
+         <img src="https://cdn-icons-png.flaticon.com/512/2117/2117661.png" alt="Nome">
+         <div class="star-class">
+             <button class="star-button"></button>
+             <button class="star-button"></button>
+             <button class="star-button"></button>
+             <button class="star-button"></button>
+             <button class="star-button"></button>
+         </div>
+     </div>
+     <div class="Preço">
+      <strong>R$0,00</strong>
+      <br>
+      <button>Comparar em X lojas</button>
+     </div>
    </div>
   <!-- Footer -->
   <footer>
