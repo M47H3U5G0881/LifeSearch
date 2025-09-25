@@ -78,11 +78,12 @@
         justify-items: center;
         display: inline-block;
         margin: 50px;
-        font-size: larger;
+        font-size: 30px;
     }
     .Informações img{
       width: 300px;
       height: 300px;
+      margin: 10px;
     }
     .star-class {
         display: flex;
@@ -107,16 +108,57 @@
       cursor: pointer;
     }
     .Preço{
-      margin-top: 50px;
+      margin-top: 100px;
+      margin-right: 200px;
       align-items: center;
       font-size: 60px;
     }
     .Preço button{
+      margin-top: 30px;
       font-size: 30px;
       border: transparent;
       border-radius: 20px;
       height: 80px;
       background-color: #bde4d1;
+      cursor: pointer;
+    }
+    .heart-button {
+      /* Estilos básicos do botão */
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 24px; /* Tamanho do ícone de coração */
+      color: red; /* Cor do coração */
+      position: relative;
+      padding: 0;
+      outline: none; /* Remove a linha de contorno ao clicar */
+      margin: 50px;
+    }
+    /* Você também pode desenhar o coração usando CSS */
+    .heart-button {
+      /* Estilos para o desenho do coração com CSS (em vez do caractere) */
+      width: 100px;
+      height: 90px;
+      position: relative;
+      background: red; /* Cor de base, será modificada */
+      transform: rotate(-45deg);
+    }
+    .heart-button::before,
+    .heart-button::after {
+      content: '';
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      position: absolute;
+      background: red;
+    }
+    .heart-button::before {
+      top: -50px;
+      left: 0;
+    }
+    .heart-button::after {
+      top: -10px;
+      left: 50px;
     }
     footer {
       margin-top: 50px;
@@ -218,6 +260,15 @@
       <br>
       <button>Comparar em X lojas</button>
      </div>
+   </div>
+   <div class="Produto">
+    <img src="https://cdn-icons-png.flaticon.com/512/2117/2117661.png" alt="Nome">
+    <div>
+      <strong>R$0,00</strong>
+      <p>à vista</p>
+    </div>
+    <p>Ou 0X de R$0,00</p>
+    <button class="heart-button"></button>
    </div>
   <!-- Footer -->
   <footer>
