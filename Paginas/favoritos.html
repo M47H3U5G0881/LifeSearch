@@ -70,6 +70,7 @@
       width: 16px;
       height: 16px;
     }
+    
     footer {
       margin-top: 30%;
       background-color: #1b1b1b;
@@ -119,27 +120,25 @@
       cursor: pointer;
       border-radius: 100%;
     }
-
-
+    
     .favoritos {
-        display: flex;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
     }
-
-    .favoritado {
-        justify-content: space-around;
-    }
-
-  </style>
+    
+    </style>
 </head>
 <body>
-
+  
   <!-- Header -->
   <header>
     <div class="left">
       <img src="https://i.imgur.com/phfDxjL.png" alt="logo">
       <span>Life Search</span>
     </div>
-
+    
     <div class="search-container">
       <input type="text" placeholder="Pesquisar" id="pesquisa">
       <div class="search-icon">
@@ -158,15 +157,12 @@
       </span>
     </div>
   </header>
+
   <!--conteúdo do site-->  
-    <div class="favoritos">
-        <div class="linha">
-            <h1 style="padding-left: 30px; font-size: 60px;">Seus favoritos</h1>
-            <p style="font-size: 30px;">1 item favoritado</p>
-        </div>
-    </div>
-
-
+  <div class="favoritos">
+    <h1 style="padding-left: 30px; font-size: 60px;">Seus favoritos</h1>
+    <p style="font-size: 30px;">1 item favoritado</p>
+  </div>
 
   <!-- Footer -->
   <footer>
