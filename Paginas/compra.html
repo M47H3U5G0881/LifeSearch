@@ -123,31 +123,28 @@
       cursor: pointer;
     }
     .heart-button {
-      /* Estilos básicos do botão */
       background-color: transparent;
       border: none;
       cursor: pointer;
-      font-size: 24px; /* Tamanho do ícone de coração */
-      color: red; /* Cor do coração */
+      font-size: 24px;
+      color: red;
       position: relative;
       padding: 0;
-      outline: none; /* Remove a linha de contorno ao clicar */
+      outline: none;
       margin: 50px;
     }
-    /* Você também pode desenhar o coração usando CSS */
     .heart-button {
-      /* Estilos para o desenho do coração com CSS (em vez do caractere) */
-      width: 100px;
-      height: 90px;
+      width: 50px;
+      height: 40px;
       position: relative;
-      background: red; /* Cor de base, será modificada */
+      background: red;
       transform: rotate(-45deg);
     }
     .heart-button::before,
     .heart-button::after {
       content: '';
-      width: 100px;
-      height: 100px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       position: absolute;
       background: red;
@@ -158,7 +155,7 @@
     }
     .heart-button::after {
       top: -10px;
-      left: 50px;
+      left: 45px;
     }
     footer {
       margin-top: 50px;
@@ -268,7 +265,14 @@
       <p>à vista</p>
     </div>
     <p>Ou 0X de R$0,00</p>
-    <button class="heart-button"></button>
+    <div class="buttons-class">
+      <button class="heart-button"></button>
+      <button class="star-button"></button>
+      <button class="star-button"></button>
+      <button class="star-button"></button>
+      <button class="star-button"></button>
+      <button class="star-button"></button>
+  </div>
    </div>
   <!-- Footer -->
   <footer>
