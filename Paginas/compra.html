@@ -125,17 +125,18 @@
     .Produto {
       display: flex;
       align-items: center;
+      justify-content: center;
       border: solid black;
       border-radius: 50px;
       background-color: #bde4d1;
       font-size: larger;
       padding: 20px;
+      margin: 50px;
     }
     .Produto img {
       height: 150px;
-    }
-    .Comprar {
-      height: 50px;
+      margin-right: 50px;
+      margin-left: 50px;
     }
     .ÀVista {
       font-size: 50px;
@@ -179,6 +180,19 @@
     .heart-button::after {
       top: -5px;
       left: 11px;
+    }
+    .Comprar {
+      border: transparent;
+      border-radius: 20px;
+      width: 180px;
+      height: 80px;
+      background-color: #1b1b1b;
+      color: white;
+      font-size: larger;
+    }
+    .Icone {
+      border-radius: 100%;
+      background-color: white;
     }
     footer {
       margin-top: 50px;
@@ -297,7 +311,7 @@
         </div>
       </div>
     </div>
-    <img src="https://cdn-icons-png.flaticon.com/512/2117/2117661.png" alt="Icone">
+    <img src="https://cdn-icons-png.flaticon.com/512/2117/2117661.png" alt="Icone" class="Icone">
     <button class="Comprar">Comprar</button>
   </div>
   <!-- Footer -->
