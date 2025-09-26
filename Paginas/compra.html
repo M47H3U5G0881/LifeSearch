@@ -70,17 +70,17 @@
       width: 16px;
       height: 16px;
     }
-    .Compra{
+    .Compra {
       display: flex;
       justify-content: space-around;
     }
-    .Informações{
+    .Informações {
         justify-items: center;
         display: inline-block;
         margin: 50px;
         font-size: 30px;
     }
-    .Informações img{
+    .Informações img {
       width: 300px;
       height: 300px;
       margin: 10px;
@@ -107,13 +107,13 @@
       border: none;
       cursor: pointer;
     }
-    .Preço{
+    .Preço {
       margin-top: 100px;
       margin-right: 200px;
       align-items: center;
       font-size: 60px;
     }
-    .Preço button{
+    .Preço button {
       margin-top: 30px;
       font-size: 30px;
       border: transparent;
@@ -121,6 +121,29 @@
       height: 80px;
       background-color: #bde4d1;
       cursor: pointer;
+    }
+    .Produto {
+      display: flex;
+      align-items: center;
+      border: solid black;
+      border-radius: 50px;
+      background-color: #bde4d1;
+      font-size: larger;
+      padding: 20px;
+    }
+    .Produto img {
+      height: 150px;
+    }
+    .Comprar {
+      height: 50px;
+    }
+    .ÀVista {
+      font-size: 50px;
+      margin-bottom: 0px;
+    }
+    .Outros {
+      display: flex;
+      align-items: center;
     }
     .heart-button {
       background-color: transparent;
@@ -134,8 +157,8 @@
       margin: 50px;
     }
     .heart-button {
-      width: 50px;
-      height: 40px;
+      width: 25px;
+      height: 20px;
       position: relative;
       background: red;
       transform: rotate(-45deg);
@@ -143,19 +166,19 @@
     .heart-button::before,
     .heart-button::after {
       content: '';
-      width: 50px;
-      height: 50px;
+      width: 25px;
+      height: 25px;
       border-radius: 50%;
       position: absolute;
       background: red;
     }
     .heart-button::before {
-      top: -50px;
-      left: 0;
+      top: -16px;
+      left: 0px;
     }
     .heart-button::after {
-      top: -10px;
-      left: 45px;
+      top: -5px;
+      left: 11px;
     }
     footer {
       margin-top: 50px;
@@ -261,19 +284,22 @@
    <div class="Produto">
     <img src="https://cdn-icons-png.flaticon.com/512/2117/2117661.png" alt="Nome">
     <div>
-      <strong>R$0,00</strong>
-      <p>à vista</p>
+      <p class="ÀVista"><strong>R$0,00</strong> à vista</p>
+      <div class="Outros">
+        <p>Ou 0X de R$0,00</p>
+        <div class="buttons-class">
+          <button class="heart-button"></button>
+          <button class="star-button"></button>
+          <button class="star-button"></button>
+          <button class="star-button"></button>
+          <button class="star-button"></button>
+          <button class="star-button"></button>
+        </div>
+      </div>
     </div>
-    <p>Ou 0X de R$0,00</p>
-    <div class="buttons-class">
-      <button class="heart-button"></button>
-      <button class="star-button"></button>
-      <button class="star-button"></button>
-      <button class="star-button"></button>
-      <button class="star-button"></button>
-      <button class="star-button"></button>
+    <img src="https://cdn-icons-png.flaticon.com/512/2117/2117661.png" alt="Icone">
+    <button class="Comprar">Comprar</button>
   </div>
-   </div>
   <!-- Footer -->
   <footer>
     <div class="footer-container">
