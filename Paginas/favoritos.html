@@ -127,8 +127,22 @@
       justify-content: space-between;
       padding: 50px;
     }
-
-    
+    .comprar-produto{
+      background-color: rgb(177, 255, 177); 
+      border-radius: 20px; border-color: rgb(177, 255, 177); 
+      width: 200px; height:100px;
+      font-size: 30px;
+      margin-left: 100px;
+    }
+    .produto-e-coisas {
+      border: 2px solid gray;
+      border-color: gray;
+      border-left: 30px;
+      border-right: 30px;
+    }
+    .empresa-e-botao {
+      text-align: center;
+    }
     
     </style>
 </head>
@@ -160,10 +174,22 @@
     </div>
   </header>
 
+
   <!--conteúdo do site-->  
   <div class="favoritos">
     <h1 style="padding-left: 30px; font-size: 60px;">Seus favoritos</h1>
     <p style="font-size: 30px;">1 item favoritado</p>
+  </div>
+  <div class="produto-e-coisas">
+    <div class="produto">
+      <img src="https://cdn-icons-png.flaticon.com/512/2117/2117661.png" alt="Nome" style="width: 200px; padding-left: 150px;">
+      <p style="font-size: 40px; padding-left: 100px;"><b>Nome do Produto</b></p>
+    </div>
+    <p style="font-size: 30px; padding-left: 100px;">R$0,00</p>
+    <div class="empresa-e-botão">
+      <button type="button" class="comprar-produto">Comprar</button>
+      <img src="https://cdn-icons-png.flaticon.com/512/2117/2117661.png" style="width: 75px;">
+    </div>
   </div>
 
   <!-- Footer -->
