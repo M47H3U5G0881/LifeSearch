@@ -126,6 +126,8 @@
       align-items: center;
       justify-content: space-between;
       padding: 50px;
+      margin: 50px;
+      border-bottom: solid gray;
     }
     .comprar-produto{
       background-color: rgb(177, 255, 177); 
@@ -139,15 +141,21 @@
         background-color: rgb(140, 255, 140); 
     }
     .produto-e-coisas {
-      border: 2px solid gray;
-      border-color: gray;
-      border-left: 30px;
-      border-right: 30px;
+    margin: 50px;
+    border: 6px solid gray;
+    border-color: gray;
+    border-radius: 50px;
+    width: 500px;
+    padding: 25px;
     }
     .empresa-e-botao {
       text-align: center;
     }
-    
+    .xis {
+      width: 50px;
+      margin-left: 93%;
+      margin-top: -2%;
+    }
     </style>
 </head>
 <body>
@@ -184,17 +192,20 @@
     <p style="font-size: 30px;">1 item favoritado</p>
   </div>
 
-  <div class="produto-e-coisas">
-    <div class="produto">
-      <img src="https://cdn-icons-png.flaticon.com/512/2117/2117661.png" alt="Nome" style="width: 200px; padding-left: 150px;">
-      <p style="font-size: 40px; padding-left: 100px;"><b>Nome do Produto</b></p>
+  <div class="quadro">
+      <div class="produto-e-coisas">
+          <div class="produto">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Red_X.svg/2048px-Red_X.svg.png" class="xis">
+              <img src="https://cdn-icons-png.flaticon.com/512/2117/2117661.png" alt="Nome" style="width: 200px; padding-left: 150px;">
+              <p style="font-size: 40px; padding-left: 100px;"><b>Nome do Produto</b></p>
+            </div>
+            <p style="font-size: 30px; padding-left: 100px;">R$0,00</p>
+            <div class="empresa-e-botão">
+                <button type="button" class="comprar-produto">Comprar</button>
+                <img src="https://cdn-icons-png.flaticon.com/512/2117/2117661.png" style="width: 75px;">
+            </div>
+        </div>
     </div>
-    <p style="font-size: 30px; padding-left: 100px;">R$0,00</p>
-    <div class="empresa-e-botão">
-      <button type="button" class="comprar-produto">Comprar</button>
-      <img src="https://cdn-icons-png.flaticon.com/512/2117/2117661.png" style="width: 75px;">
-    </div>
-
     
 
   <!-- Footer -->
