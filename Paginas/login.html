@@ -67,6 +67,9 @@
       margin: 30px;
       margin-right: 30%;
     }
+    .Confirmar:hover{
+      background-color: #acf8d3;
+    }
     .Login a {
       font-size: smaller;
       color: gray;
@@ -182,7 +185,7 @@
         <div class="senha">
           <input type="password" placeholder=" Senha">
         </div>
-        <button class="Confirmar">Confirmar</button>
+        <button class="Confirmar" onclick="inicial()">Confirmar</button>
         <a href="">Não tem uma conta? Clique aqui.</a>
       </div>
     </center>
@@ -225,4 +228,10 @@
     </div>
   </footer>
 </body>
+
+<script>
+  function inicial() {
+    window.location.href = "Inicial.html";
+  }
+</script>
 </html>
