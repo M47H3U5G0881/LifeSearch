@@ -189,6 +189,7 @@
       background-color: #1b1b1b;
       color: white;
       font-size: larger;
+      cursor: pointer;
     }
     .Icone {
       border-radius: 100%;
@@ -246,7 +247,6 @@
   </style>
 </head>
 <body>
-
   <!-- Header -->
   <header>
     <div class="left">
@@ -255,18 +255,18 @@
     </div>
 
     <div class="search-container">
-      <input type="text" placeholder="Pesquisar">
+      <input type="text" placeholder="Pesquisar" id="pesquisa">
       <div class="search-icon">
         <img src="https://i.imgur.com/xg63cmi.png" alt="Menu">
       </div>
     </div>
 
     <div class="right">
-      <span>
+      <span onclick="Favoritos()">
         <img src="https://i.imgur.com/vXYiupN.png" alt="Favoritos">
         Favoritos
       </span>
-      <span>
+      <span onclick="Login()">
         <img src="https://i.imgur.com/7VqzATQ.png" alt="Login">
         Login
       </span>
@@ -352,6 +352,20 @@
       </div>
     </div>
   </footer>
-
 </body>
+<!--script pra pesquisa falsa-->
+<script>
+  document.getElementById('pesquisa').addEventListener('keydown', function(event) { // Pesquisa
+    if (event.keyCode === 13) { 
+      event.preventDefault();
+      window.location.href = 'pesquisa.html';
+    }
+  });
+  function Favoritos() { // Favoritos
+      window.location.href = 'favoritos.html';
+  }
+  function Login() { // Login
+      window.location.href = 'login.html';
+  }
+  </script>
 </html>
