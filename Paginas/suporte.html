@@ -235,7 +235,7 @@
   </span>
   </div>
   </header>
-    <img src="https://cdn-icons-png.flaticon.com/512/58/58887.png" alt="voltar" id="voltar" class="voltar">
+    <img src="https://cdn-icons-png.flaticon.com/512/58/58887.png" alt="voltar" id="voltar" class="voltar" onclick="inicial()">
   <!-- Suporte -->
   <div class="Suporte">
   <div class="texto">
@@ -263,7 +263,7 @@
   <strong>Como podemos ajudar?</strong>
   <textarea style="resize: none"></textarea>
   </div>
-  <button>Enviar</button>
+  <button onclick="inicial()" style="cursor: pointer;">Enviar</button>
   </div>
   </div>
   
@@ -306,4 +306,10 @@
   </div>
   </footer>
 </body>
+<!-- Script Fake -->
+<script>
+  function inicial() {
+    window.location.href = "inicial.html";
+  }
+</script>
 </html>
