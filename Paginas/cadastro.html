@@ -10,7 +10,7 @@
       font-family: Arial, sans-serif;
       background-color: rgb(181, 219, 203);
     }
-    .voltar{
+    .voltar {
       width: 3%;
       background-color: white;
       border-radius: 100%;
@@ -18,24 +18,24 @@
       margin-top: -5px;
       position: absolute;
     }
-    .Logo{
+    .Logo {
       justify-content: center;
       margin-top: 1%;
     }
-    .Logo strong{
+    .Logo strong {
       font-size: 400%;
     }
-    .logo{
+    .logo {
       border-radius: 100%;
       width: 150px;
       height: 150px;
       background-color: white;
     }
-    .name-logo{
+    .name-logo {
       position: relative;
       top: -45px;
     }
-    .Cadastro{
+    .Cadastro {
       margin-top: 2%;
       background-color: white;
       border-radius: 10%;
@@ -44,10 +44,10 @@
       display: inline-block;
       padding: 10px;
     }
-    .Cadastro strong{
+    .Cadastro strong {
       font-size: 50px;
     }
-    .Cadastro input{
+    .Cadastro input {
       border-radius: 50px;
       width: 600px;
       height: 60px;
@@ -57,7 +57,7 @@
       margin: 20px;
       padding-left: 10px;
     }
-    .Cadastro button{
+    .Cadastro button {
       background-color: #bde4d1;
       border-radius: 20px;
       padding: 20px;
@@ -66,6 +66,10 @@
       font-size: larger;
       margin: 30px;
       margin-right: 30%;
+      cursor: pointer;
+    }
+    .Cadastro button:hover {
+      background-color: #acf8d3;
     }
     .Cadastro a {
       font-size: smaller;
@@ -120,11 +124,10 @@
       cursor: pointer;
       border-radius: 100%;
     }
-
     </style>
 </head>
 <body>
-  <img src="https://cdn-icons-png.flaticon.com/512/58/58887.png" alt="voltar" id="voltar" class="voltar">
+  <img src="https://cdn-icons-png.flaticon.com/512/58/58887.png" alt="voltar" id="voltar" class="voltar" onclick="inicial()">
   <center>
   <div class="Logo">
     <img src="https://i.imgur.com/phfDxjL.png" class="logo" alt="logo">
@@ -144,8 +147,8 @@
           <br>
           <input type="password" placeholder=" Repita sua senha">
         </div>
-        <button>Confirmar</button>
-        <a href="">Já tem uma conta? Clique aqui.</a>
+        <button onclick="inicial()">Confirmar</button>
+        <a href="login.html">Já tem uma conta? Clique aqui.</a>
       </div>
     </center>
     <!-- Footer -->
@@ -187,4 +190,10 @@
     </div>
   </footer>
 </body>
+<!-- Script Fake -->
+<script>
+  function inicial() {
+    window.location.href = "inicial.html";
+  }
+</script>
 </html>
