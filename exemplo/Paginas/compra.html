@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Search</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #fff;
+    }
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .left img {
+      width: 32px;
+      height: 32px;
+    }
+    .search-container {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      margin: 0 20px;
+      position: relative;
+    }
+    .search-container input {
+      width: 100%;
+      padding: 8px 35px 8px 15px;
+      border: none;
+      background-color: #f1f1f1;
+      border-radius: 20px;
+      font-size: 14px;
+      outline: none;
+    }
+    .search-container .search-icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    .search-container .search-icon img {
+      width: 16px;
+      height: 16px;
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+    }
+    .right span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+    }
+    .right img {
+      width: 16px;
+      height: 16px;
+    }
+    .Compra {
+      display: flex;
+      justify-content: space-around;
+    }
+    .Compra button{
+      cursor: pointer;
+    }
+    .Informações {
+        justify-items: center;
+        display: inline-block;
+        margin: 50px;
+        font-size: 30px;
+    }
+    .Informações img {
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+    }
+    .star-class {
+        display: flex;
+    }
+    .star-button {
+      width: 50px;
+      height: 50px;
+      background-color: gold;
+      clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+      border: none;
+      cursor: pointer;
+    }
+    .Preço {
+      margin-top: 100px;
+      margin-right: 200px;
+      align-items: center;
+      font-size: 60px;
+    }
+    .Preço button {
+      margin-top: 30px;
+      font-size: 30px;
+      border: transparent;
+      border-radius: 20px;
+      height: 80px;
+      background-color: #bde4d1;
+      cursor: pointer;
+    }
+    .Produto {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: solid black;
+      border-radius: 50px;
+      background-color: #bde4d1;
+      font-size: larger;
+      padding: 20px;
+      margin: 50px;
+    }
+    .Produto img {
+      height: 150px;
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+    .ÀVista {
+      font-size: 50px;
+      margin-bottom: 0px;
+    }
+    .Outros {
+      display: flex;
+      align-items: center;
+    }
+    .heart-button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 24px;
+      color: red;
+      position: relative;
+      padding: 0;
+      outline: none;
+      margin: 50px;
+    }
+    .heart-button {
+      width: 25px;
+      height: 20px;
+      position: relative;
+      background: red;
+      transform: rotate(-45deg);
+    }
+    .heart-button::before,
+    .heart-button::after {
+      content: '';
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      position: absolute;
+      background: red;
+    }
+    .heart-button::before {
+      top: -16px;
+      left: 0px;
+    }
+    .heart-button::after {
+      top: -5px;
+      left: 11px;
+    }
+    .Comprar {
+      border: transparent;
+      border-radius: 20px;
+      width: 180px;
+      height: 80px;
+      background-color: #1b1b1b;
+      color: white;
+      font-size: larger;
+      cursor: pointer;
+    }
+    .Icone {
+      border-radius: 100%;
+      background-color: white;
+    }
+    footer {
+      margin-top: 50px;
+      background-color: #1b1b1b;
+      color: white;
+      padding: 40px 60px;
+    }
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .footer-section {
+      flex: 1;
+      margin: 0 20px;
+      min-width: 200px;
+    }
+    .footer-section h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .footer-section p {
+      margin: 6px 0;
+      font-size: 14px;
+      color: #fff;
+    }
+    .footer-logo {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+    .logo-desc h3 {
+      margin: 10px 0 10px;
+    }
+    .logo-desc p {
+      font-size: 14px;
+      max-width: 300px;
+    }
+    .social-icons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+    .social-icons img {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      border-radius: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="left">
+      <img src="https://i.imgur.com/phfDxjL.png" alt="logo">
+      <span>Life Search</span>
+    </div>
+
+    <div class="search-container">
+      <input type="text" placeholder="Pesquisar" id="pesquisa">
+      <div class="search-icon">
+        <img src="https://i.imgur.com/xg63cmi.png" alt="Menu">
+      </div>
+    </div>
+
+    <div class="right">
+      <span onclick="Favoritos()">
+        <img src="https://i.imgur.com/vXYiupN.png" alt="Favoritos">
+        Favoritos
+      </span>
+      <span onclick="Login()">
+        <img src="https://i.imgur.com/7VqzATQ.png" alt="Login">
+        Login
+      </span>
+      <span>
+        <img src="https://i.imgur.com/M8JOEf7.png" alt="Carrinho">
+      </span>
+    </div>
+  </header>
+  <!-- compra -->
+   <div class="Compra">
+     <div class="Informações">
+         <strong>Teclado Mecânico Gamer <br>Logitech G413 SE, Preto</strong>
+         <br>
+         <img src="https://www.logitechstore.com.br/media/catalog/product/cache/105e6f420716e0751863c4b81f527d17/l/o/logitech21.png" alt="Nome">
+         <div class="star-class">
+             <button class="star-button"></button>
+             <button class="star-button"></button>
+             <button class="star-button"></button>
+             <button class="star-button"></button>
+             <button class="star-button"></button>
+         </div>
+     </div>
+     <div class="Preço">
+      <strong>R$499,99</strong>
+      <br>
+      <button>Comparar em X lojas</button>
+     </div>
+   </div>
+   <div class="Produto">
+    <img src="https://www.logitechstore.com.br/media/catalog/product/cache/105e6f420716e0751863c4b81f527d17/l/o/logitech21.png" alt="Nome">
+    <div>
+      <p class="ÀVista"><strong>R$460,00</strong> à vista</p>
+      <div class="Outros">
+        <p>Ou 6X de R$76,66</p>
+        <div class="buttons-class">
+          <button class="heart-button"></button>
+          <button class="star-button"></button>
+          <button class="star-button"></button>
+          <button class="star-button"></button>
+          <button class="star-button"></button>
+          <button class="star-button"></button>
+        </div>
+      </div>
+    </div>
+    <img src="https://images.cults3d.com/-yAODnBYpGJeVDsOL61JbF6mVI0=/516x516/filters:no_upscale()/https://fbi.cults3d.com/uploaders/29408799/illustration-file/047bf629-0745-4b1d-9341-6f76a596810d/Ekran-Resmi-2023-11-11-22.55.26.png" alt="Icone" class="Icone">
+    <button class="Comprar">Comprar</button>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section logo-desc">
+        <img src="https://imgur.com/EcLlMvI.png" alt="logo" class="footer-logo" />
+        <h3>Life Search</h3>
+        <p>
+          Life Search é a plataforma ideal para encontrar ofertas e produtos das melhores lojas.
+          Navegue por diversas categorias e descubra preços acessíveis com facilidade!
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Sobre</h3>
+        <p>Sobre o Life Search</p>
+        <p>Informações corporativas</p>
+        <p>Acessibilidade</p>
+        <p>Termos de Uso</p>
+        <p>Carreiras</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Categorias</h3>
+        <p>Eletrônicos</p>
+        <p>Roupas e vestimenta</p>
+        <p>Casa e cozinha</p>
+        <p>Beleza e cuidados</p>
+        <p>Livros</p>
+      </div>
+
+      <div class="footer-section social-icons">
+        <img src="https://as1.ftcdn.net/jpg/05/43/34/74/1000_F_543347499_xe1jxIljb6KyJErJYZw5FoEdNVmfWy11.jpg" alt="Facebook" />
+        <img src="https://img.freepik.com/vetores-premium/logotipo-de-midia-social-de-contorno-preto_197792-2416.jpg?semt=ais_hybrid&w=740" alt="Instagram" />
+        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/19490753-logotipo-preto-do-twitter-de-icone-preto-do-twitter-livre-de-simbolo-do-twitter-gratis-vetor.jpg" alt="Twitter" />
+        <img src="https://w7.pngwing.com/pngs/902/874/png-transparent-computer-icons-linkedin-black-icon-miscellaneous-angle-text-thumbnail.png" alt="LinkedIn" />
+      </div>
+    </div>
+  </footer>
+</body>
+<!--script pra pesquisa falsa-->
+<script>
+  document.getElementById('pesquisa').addEventListener('keydown', function(event) { // Pesquisa
+    if (event.keyCode === 13) { 
+      event.preventDefault();
+      window.location.href = 'pesquisa.html';
+    }
+  });
+  function Favoritos() { // Favoritos
+      window.location.href = 'favoritos.html';
+  }
+  function Login() { // Login
+      window.location.href = 'login.html';
+  }
+</script>
+</html>
