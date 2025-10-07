@@ -235,7 +235,9 @@
   </span>
   </div>
   </header>
-    <img src="https://cdn-icons-png.flaticon.com/512/58/58887.png" alt="voltar" id="voltar" class="voltar" onclick="function("inicial")">
+  <span onclick="redirect("inicial")">
+    <img src="https://cdn-icons-png.flaticon.com/512/58/58887.png" alt="voltar" id="voltar" class="voltar" >
+  </span>
   <!-- Suporte -->
   <div class="Suporte">
   <div class="texto">
@@ -314,7 +316,7 @@
         instagram: "https://instagram.com",
         twitter: "https://www.twitter.com",
         linkedin: "https://www.linkedin.com",
-        inicial: "inicial.html"
+        inicial: "/inicial.html"
       };
 
       linkChamado = links[id];
