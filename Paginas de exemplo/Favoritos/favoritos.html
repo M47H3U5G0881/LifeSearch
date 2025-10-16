@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Search</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #fff;
+    }
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .left img {
+      width: 32px;
+      height: 32px;
+    }
+    .search-container {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      margin: 0 20px;
+      position: relative;
+    }
+    .search-container input {
+      width: 100%;
+      padding: 8px 35px 8px 15px;
+      border: none;
+      background-color: #f1f1f1;
+      border-radius: 20px;
+      font-size: 14px;
+      outline: none;
+    }
+    .search-container .search-icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    .search-container .search-icon img {
+      width: 16px;
+      height: 16px;
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+    }
+    .right span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+    }
+    .right img {
+      width: 16px;
+      height: 16px;
+    }
+    .favoritos {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      margin-right: 50px;
+      margin-left: 50px;
+      border-bottom: solid gray;
+    }
+    .produto-e-coisas {
+      margin: 50px;
+      border: 6px solid gray;
+      border-color: gray;
+      border-radius: 50px;
+      width: 380px;
+      padding: 10px;
+    }
+    .comprar-produto {
+      background-color: #bde4d1; 
+      border-radius: 20px;
+      border: transparent; 
+      width: 200px; height:100px;
+      font-size: 30px;
+      margin-left: 30px;
+      cursor: pointer;
+    }
+    .comprar-produto:hover {
+        background-color: #acf8d3;; 
+    }
+    .empresa-e-botao {
+      justify-content: center;
+    }
+    .xis {
+      width: 40px;
+      margin-left: 88%;
+    }
+    footer {
+      margin-top: 50px;
+      background-color: #1b1b1b;
+      color: white;
+      padding: 40px 60px;
+    }
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .footer-section {
+      flex: 1;
+      margin: 0 20px;
+      min-width: 200px;
+    }
+    .footer-section h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .footer-section p {
+      margin: 6px 0;
+      font-size: 14px;
+      color: #fff;
+    }
+    .footer-logo {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+    .logo-desc h3 {
+      margin: 10px 0 10px;
+    }
+    .logo-desc p {
+      font-size: 14px;
+      max-width: 300px;
+    }
+    .social-icons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+    .social-icons img {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      border-radius: 100%;
+    }
+    </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="left">
+      <img src="https://i.imgur.com/phfDxjL.png" alt="logo">
+      <span>Life Search</span>
+    </div>
+    <div class="search-container">
+      <input type="text" placeholder="Pesquisar" id="pesquisa">
+      <div class="search-icon">
+        <img src="https://i.imgur.com/xg63cmi.png" alt="Menu">
+      </div>
+    </div>
+    <div class="right">
+      <span onclick="Favoritos()">
+        <img src="https://i.imgur.com/vXYiupN.png" alt="Favoritos">
+        Favoritos
+      </span>
+      <span onclick="Login()">
+        <img src="https://i.imgur.com/7VqzATQ.png" alt="Login">
+        Login
+      </span>
+    </div>
+  </header>
+  <!-- Favoritos -->  
+  <div class="favoritos">
+    <h1 style="padding-left: 30px; font-size: 60px;">Seus favoritos</h1>
+    <p style="font-size: 30px;">1 item favoritado</p>
+  </div>
+  <div class="quadro">
+      <div class="produto-e-coisas">
+          <div class="produto">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Red_X.svg/2048px-Red_X.svg.png" class="xis">
+              <img src="https://www.logitechstore.com.br/media/catalog/product/cache/105e6f420716e0751863c4b81f527d17/l/o/logitech21.png" alt="Nome" style="width: 200px; margin-left: 90px;">
+              <p style="font-size: 40px; margin-left: 30px;"><b>Nome do Produto</b></p>
+          </div>
+            <p style="font-size: 30px; margin-left: 30px;">R$460,00</p>
+          <div class="empresa-e-botao">
+                <button type="button" class="comprar-produto" onclick="Comprar()">Comprar</button>
+                <img src="https://images.cults3d.com/-yAODnBYpGJeVDsOL61JbF6mVI0=/516x516/filters:no_upscale()/https://fbi.cults3d.com/uploaders/29408799/illustration-file/047bf629-0745-4b1d-9341-6f76a596810d/Ekran-Resmi-2023-11-11-22.55.26.png" style="width: 75px; border-radius: 100%; margin-left: 45px;">
+          </div>
+      </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section logo-desc">
+        <img src="https://imgur.com/EcLlMvI.png" alt="logo" class="footer-logo" />
+        <h3>Life Search</h3>
+        <p>
+          Life Search é a plataforma ideal para encontrar ofertas e produtos das melhores lojas.
+          Navegue por diversas categorias e descubra preços acessíveis com facilidade!
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Sobre</h3>
+        <p>Sobre o Life Search</p>
+        <p>Informações corporativas</p>
+        <p>Acessibilidade</p>
+        <p>Termos de Uso</p>
+        <p>Carreiras</p>
+      </div>
+      <div class="footer-section">
+        <h3>Categorias</h3>
+        <p>Eletrônicos</p>
+        <p>Roupas e vestimenta</p>
+        <p>Casa e cozinha</p>
+        <p>Beleza e cuidados</p>
+        <p>Livros</p>
+      </div>
+      <div class="footer-section social-icons">
+        <img src="https://as1.ftcdn.net/jpg/05/43/34/74/1000_F_543347499_xe1jxIljb6KyJErJYZw5FoEdNVmfWy11.jpg" alt="Facebook" />
+        <img src="https://img.freepik.com/vetores-premium/logotipo-de-midia-social-de-contorno-preto_197792-2416.jpg?semt=ais_hybrid&w=740" alt="Instagram" />
+        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/19490753-logotipo-preto-do-twitter-de-icone-preto-do-twitter-livre-de-simbolo-do-twitter-gratis-vetor.jpg" alt="Twitter" />
+        <img src="https://w7.pngwing.com/pngs/902/874/png-transparent-computer-icons-linkedin-black-icon-miscellaneous-angle-text-thumbnail.png" alt="LinkedIn" />
+      </div>
+    </div>
+  </footer>
+</body>
+<!--script pra pesquisa falsa-->
+<script>
+  document.getElementById('pesquisa').addEventListener('keydown', function(event) { // Pesquisa
+    if (event.keyCode === 13) { 
+      event.preventDefault();
+      window.location.href = 'pesquisa.html';
+    }
+  });
+  function Favoritos() { // Favoritos
+      window.location.href = 'favoritos.html';
+  }
+  function Login() { // Login
+      window.location.href = 'login.html';
+  }
+  function Comprar() { // Comprar
+      window.location.href = 'compra.html';
+  }
+</script>
+</html>
