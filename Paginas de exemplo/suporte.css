@@ -1,0 +1,199 @@
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(181, 219, 203);
+    }
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    }
+    .left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    }
+    .left img {
+    width: 32px;
+    height: 32px;
+    }
+    .search-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    position: relative;
+    }
+    .search-container input {
+    width: 100%;
+    padding: 8px 35px 8px 15px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    }
+    .search-container .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    }
+    .search-container .search-icon img {
+    width: 16px;
+    height: 16px;
+    }
+    .right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    }
+    .right span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    }
+    .right img {
+    width: 16px;
+    height: 16px;
+    }
+    .voltar{
+    width: 2%;
+    background-color: white;
+    border-radius: 100%;
+    margin: 15px;
+    margin-top: 5px;
+    position: absolute;
+    }
+    footer {
+    margin-top: 3%;
+    background-color: #1b1b1b;
+    color: white;
+    padding: 40px 60px;
+    }
+    .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    }
+    .footer-section {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 200px;
+    }
+    .footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    }
+    .footer-section p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #fff;
+    }
+    .footer-logo {
+    width: 40px;
+    margin-bottom: 10px;
+    }
+    .logo-desc h3 {
+    margin: 10px 0 10px;
+    }
+    .logo-desc p {
+    font-size: 14px;
+    max-width: 300px;
+    }
+    .social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    }
+    .social-icons img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 100%;
+    }
+    .Suporte{
+    margin-top: 10%;
+    }
+    .Suporte p{
+    text-align: center;
+    display: flex;
+    }
+    .Suporte strong{
+    text-align: center;
+    display: flex;
+    margin: 10px;
+    }
+    .informaçoes{
+    display: inline-block;
+    background-color: white;
+    border-radius: 10%;
+    margin-left: 60%;
+    font-size: larger;
+    border-color: gray;
+    border-style: solid;
+    margin-top: -31%;
+    justify-content: center;
+    padding: 15px;
+    }
+    .informaçoes input{
+    border-radius: 20px;
+    width: 600px;
+    height: 60px;
+    border-color: gray;
+    border-style: solid;
+    font-size: larger;
+    margin: 5px;
+    padding-left: 10px;
+    }
+    .informaçoes button{
+    background-color: #bde4d1;
+    border-radius: 20px;
+    padding: 20px;
+    width: 120px;
+    border: transparent;
+    font-size: larger;
+    margin: 5px;
+    margin-left: 250px;
+    }
+    .nomecompleto{
+    display: inline-flex;
+    margin-top: 5%;
+    }
+    .nomecompleto input{
+    width: 296px;
+    width: 290px;
+    }
+    .ajuda textarea{
+    height: 350px;
+    width: 602px;
+    border-radius: 20px;
+    border: solid 2px gray;
+    font-size: larger;
+    padding-top: 10px;
+    }
+    .texto{
+    margin-right: 45%;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .entre{
+    font-size: 80px;
+    font-style: oblique;
+    }
+    .fale{
+    font-size: 44px;
+    text-decoration: underline;
+    }
