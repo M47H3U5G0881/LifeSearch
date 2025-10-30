@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .left img {
+    width: 32px;
+    height: 32px;
+  }
+  .search-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    position: relative;
+  }
+  .search-container input {
+    width: 100%;
+    padding: 8px 35px 8px 15px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+  }
+  .search-container .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .search-container .search-icon img {
+    width: 16px;
+    height: 16px;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+  }
+  .right span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+  }
+  .right img {
+    width: 16px;
+    height: 16px;
+  }
+  .Compra {
+    display: flex;
+    justify-content: space-around;
+  }
+  .Compra button{
+    cursor: pointer;
+  }
+  .Informações {
+      justify-items: center;
+      display: inline-block;
+      margin: 50px;
+      font-size: 30px;
+  }
+  .Informações img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+  }
+  .star-class {
+      display: flex;
+  }
+  .star-button {
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
+    border: none;
+    cursor: pointer;
+  }
+  .Preço {
+    margin-top: 100px;
+    margin-right: 200px;
+    align-items: center;
+    font-size: 60px;
+  }
+  .Preço button {
+    margin-top: 30px;
+    font-size: 30px;
+    border: transparent;
+    border-radius: 20px;
+    height: 80px;
+    background-color: #bde4d1;
+    cursor: pointer;
+  }
+  .Produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid black;
+    border-radius: 50px;
+    background-color: #bde4d1;
+    font-size: larger;
+    padding: 20px;
+    margin: 50px;
+  }
+  .Produto img {
+    height: 150px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .ÀVista {
+    font-size: 50px;
+    margin-bottom: 0px;
+  }
+  .Outros {
+    display: flex;
+    align-items: center;
+  }
+  .heart-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: red;
+    position: relative;
+    padding: 0;
+    outline: none;
+    margin: 50px;
+  }
+  .heart-button {
+    width: 25px;
+    height: 20px;
+    position: relative;
+    background: red;
+    transform: rotate(-45deg);
+  }
+  .heart-button::before,
+  .heart-button::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background: red;
+  }
+  .heart-button::before {
+    top: -16px;
+    left: 0px;
+  }
+  .heart-button::after {
+    top: -5px;
+    left: 11px;
+  }
+  .Comprar {
+    border: transparent;
+    border-radius: 20px;
+    width: 180px;
+    height: 80px;
+    background-color: #1b1b1b;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+  }
+  .Icone {
+    border-radius: 100%;
+    background-color: white;
+  }
+  footer {
+    margin-top: 50px;
+    background-color: #1b1b1b;
+    color: white;
+    padding: 40px 60px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .footer-section {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 200px;
+  }
+  .footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .footer-section p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #fff;
+  }
+  .footer-logo {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+  .logo-desc h3 {
+    margin: 10px 0 10px;
+  }
+  .logo-desc p {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .social-icons img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 100%;
+  }
