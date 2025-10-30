@@ -4,175 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Life Search</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 20px;
-      background-color: #fff;
-    }
-    .left {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    .left img {
-      width: 32px;
-      height: 32px;
-    }
-    .search-container {
-      flex-grow: 1;
-      display: flex;
-      align-items: center;
-      margin: 0 20px;
-      position: relative;
-    }
-    .search-container input {
-      width: 100%;
-      padding: 8px 35px 8px 15px;
-      border: none;
-      background-color: #f1f1f1;
-      border-radius: 20px;
-      font-size: 14px;
-      outline: none;
-    }
-    .search-container .search-icon {
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-    }
-    .search-container .search-icon img {
-      width: 16px;
-      height: 16px;
-    }
-    .right {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 14px;
-    }
-    .right span {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      cursor: pointer;
-    }
-    .right img {
-      width: 16px;
-      height: 16px;
-    }
-    .imagens {
-      display: flex;
-    }
-    .imagem1 {
-      width: 10000px;
-      padding-left: 300px;
-    }
-    .imagem2 {
-      width: 299000px;
-      margin-left: 10px;
-    }
-    .denovo {
-      display: flex;
-      margin-bottom: 50px;
-      margin-left: 20px;
-    }
-    .fogo {
-      margin-left: 10px;
-      width: 20px;
-      display: flex;
-    }
-    .celula {
-      margin-right: 250px;
-    }
-    .lugar-de-mulher {
-      margin-right: 20px;
-      width: 50000px;
-    }
-    .tv {
-      padding-left: 45px;
-    }
-    .negocio {
-      display: flex;
-      margin-right: 50px;
-    }
-    .fone {
-      margin-left: 400px;
-    }
-    .frete {
-      margin-left: 50px;
-    }
-    .slatmb {
-      margin-left: 50px;
-    }
-    .esqueci {
-      margin-left: 50px;
-    }
-    .a {
-      margin-left: 50px;
-    }
-    .aa {
-      margin-left: 50px;
-    }
-    footer {
-      margin-top: 10%;
-      background-color: #1b1b1b;
-      color: white;
-      padding: 40px 60px;
-    }
-    .footer-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-    }
-    .footer-section {
-      flex: 1;
-      margin: 0 20px;
-      min-width: 200px;
-    }
-    .footer-section h3 {
-      font-size: 20px;
-      margin-bottom: 15px;
-    }
-    .footer-section p {
-      margin: 6px 0;
-      font-size: 14px;
-      color: #fff;
-    }
-    .footer-logo {
-      width: 40px;
-      margin-bottom: 10px;
-    }
-    .logo-desc h3 {
-      margin: 10px 0 10px;
-    }
-    .logo-desc p {
-      font-size: 14px;
-      max-width: 300px;
-    }
-    .social-icons {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      align-items: center;
-    }
-    .social-icons img {
-      width: 35px;
-      height: 35px;
-      cursor: pointer;
-      border-radius: 100%;
-    }
-  </style>
 </head>
 <body>
   <!-- Header -->
@@ -188,11 +19,11 @@
       </div>
     </div>
     <div class="right">
-      <span onclick="Favoritos()">
+      <span onclick="redirect('favoritos')">
         <img src="https://i.imgur.com/vXYiupN.png" alt="Favoritos" class="Favoritos">
         Favoritos
       </span>
-      <span onclick="Login()">
+      <span onclick="redirect('login')">
         <img src="https://i.imgur.com/7VqzATQ.png" alt="Login">
         Login
       </span>
@@ -292,7 +123,7 @@
         <p>Acessibilidade</p>
         <p>Termos de Uso</p>
         <p>Carreiras</p>
-        <p onclick="Suporte()">Ajuda</p>
+        <p onclick="redirect('suporte')">Ajuda</p>
       </div>
 
       <div class="footer-section">
@@ -314,32 +145,7 @@
   </footer>
 
 </body>
-    <!--script pra pesquisa falsa-->
-    <script>
-      document.getElementById('pesquisa').addEventListener('keydown', function(event) { // Pesquisa
-        if (event.keyCode === 13) { 
-          event.preventDefault();
-          window.location.href = 'pesquisa.html';
-        }
-      });
-      function Favoritos() { // Favoritos
-          window.location.href = 'favoritos.html';
-      }
-      function Login() { // Login
-          window.location.href = 'login.html';
-      }
-      function Suporte() { // Suporte
-          window.location.href = 'suporte.html';
-      }
-      function redirect(id){ // Redirect
-      const links = {
-        facebook: "https://facebook.com",
-        instagram: "https://instagram.com",
-        twitter: "https://www.twitter.com",
-        linkedin: "https://www.linkedin.com"
-      };
-      linkChamado = links[id];
-      window.location.href = linkChamado;
-      }
-      </script>
+<!-- Script e CSS Fake -->
+<link rel="stylesheet" href="login.css">
+<script src="script.js"></script>
 </html>
