@@ -6,7 +6,7 @@
   <title>Life Search</title>
 </head>
 <body>
-  <img src="https://cdn-icons-png.flaticon.com/512/58/58887.png" alt="voltar" id="voltar" class="voltar" onclick="inicial()">
+  <img src="https://cdn-icons-png.flaticon.com/512/58/58887.png" alt="voltar" id="voltar" class="voltar" onclick="redirect('inicial')">
   <center>
   <div class="Logo">
     <img src="https://i.imgur.com/phfDxjL.png" class="logo" alt="logo">
@@ -35,7 +35,7 @@
         <div class="senha">
           <input type="password" placeholder=" Senha">
         </div>
-        <button class="Confirmar" onclick="inicial()">Confirmar</button>
+        <button class="Confirmar" onclick="redirect('inicial')">Confirmar</button>
         <a href="cadastro.html">Não tem uma conta? Clique aqui.</a>
       </div>
     </center>
@@ -67,6 +67,7 @@
         <p>Casa e cozinha</p>
         <p>Beleza e cuidados</p>
         <p>Livros</p>
+        <p onclick="redirect('suporte')">Ajuda</p>
       </div>
 
       <div class="footer-section social-icons">
