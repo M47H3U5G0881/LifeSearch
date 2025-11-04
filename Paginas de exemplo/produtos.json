@@ -1,0 +1,9 @@
+lista_de_produtos:
+[
+    {
+        nome:"Teclado Mecânico Gamer Logitech G413 SE, Preto",
+        preço:"R$460,00",
+        parcelado:"Ou 6X de R$76,66",
+        N°_de_lojas:"1"
+    }
+]
