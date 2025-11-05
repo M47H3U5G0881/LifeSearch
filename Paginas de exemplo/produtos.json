@@ -1,9 +1,43 @@
 lista_de_produtos:
-[
-    {
-        nome:"Teclado Mecânico Gamer Logitech G413 SE, Preto",
-        preço:"R$460,00",
-        parcelado:"Ou 6X de R$76,66",
-        N°_de_lojas:"1"
+teclados[
+    1{
+        nome: "Teclado Mecânico Gamer Logitech G413 SE, Preto",
+        preço: "R$460,00",
+        parcelado: "Ou 6X de R$76,66",
+        N°_de_lojas: "1",
+        link_de_img: "https://www.logitechstore.com.br/media/catalog/product/cache/105e6f420716e0751863c4b81f527d17/l/o/logitech21.png",
+        N°_de_estrelas: "4,5"
+    }
+    2{
+        nome: "Teclado Gamer Logitech G Pro X Tkl Lightspeed, RGB, Mecânico Switch Tactile, Preto",
+        preço: "R$1.439,91",
+        parcelado: "Ou 6X de R$240,00",
+        N°_de_lojas: "2",
+        link_de_img: "https://www.logitechstore.com.br/media/catalog/product/cache/105e6f420716e0751863c4b81f527d17/l/o/logitechg.png",
+        N°_de_estrelas: "5"
+    }
+    3{
+        nome: "Logitech Teclado USB",
+        preço: "R$58,99",
+        parcelado: "Ou 2X de R$34,70",
+        N°_de_lojas: "30",
+        link_de_img: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR9z83SoXfBiwe3xoocLKOkCw-IT38cOhVZZnmrKNSA2LWl-VRRB_UWmP5mecIOuYKeU7vY6vnYMKL-zK5IUd4aDsxj-V-R2WiNvEzAhjcpcbvULE312dXzSg",
+        N°_de_estrelas: "4,3"
+    }
+    4{
+        nome: "Teclado Semi Mecânico Gamer Rise Mode G1 Rainbow",
+        preço: "R$36,00",
+        parcelado: "",
+        N°_de_lojas: "67",
+        link_de_img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTJhvU3lvNofVwG6K84_rp_VsHz0tY662oCp_X7x1bC4bFLwiTtA2uTUMVUcbVG7gAefAVEZFj4cg_9b9dp0kAGRJaTi3gt7D9WF8-46EVsVnOHDZxLf_Hi",
+        N°_de_estrelas: "4,8"
+    }
+    5{
+        nome: "Teclado Mecânico Gamer Logitech Sem Fio G515 TKL",
+        preço: "R$459,00",
+        parcelado: "Ou 9X de R$51,00",
+        N°_de_lojas: "18",
+        link_de_img: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSFRItznEzOpO1bCEP-3k6_AOgOMdsYbRgEq1jKYWvy2PptH6eGkJFuT-islB_1AIqHTxN964m6OC6O6-O2QAy9uljuQkdQS7i-hePx2vwTOlttWIGbuOi8XiQ",
+        N°_de_estrelas: "4,7"
     }
 ]
