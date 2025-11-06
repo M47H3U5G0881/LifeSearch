@@ -40,4 +40,44 @@ teclados[
         link_de_img: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSFRItznEzOpO1bCEP-3k6_AOgOMdsYbRgEq1jKYWvy2PptH6eGkJFuT-islB_1AIqHTxN964m6OC6O6-O2QAy9uljuQkdQS7i-hePx2vwTOlttWIGbuOi8XiQ",
         N°_de_estrelas: "4,7"
     }
+    6{
+        nome: "Teclado Gamer Aplus Gasket Iara Obsedian Aqua",
+        preço: "R$380,00",
+        parcelado: "Ou 10X de R$33,17",
+        N°_de_lojas: "52",
+        link_de_img: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRjIxffdrY7o0vznp_27GQ8H1ohDPdeRE1779Ipij7phNkNifnjJMZpr0eLdNOOCNnZdZeNxlsbuwHSGSV-1w5SSab7t_JIJ9iDvuI796JY23qnm763nCzrLA",
+        N°_de_estrelas: "4,6"
+    }
+    7{
+        nome: "Teclado Gamer Mecanico Fallen Pantera Switch Azul",
+        preço: "R$429,00",
+        parcelado: "",
+        N°_de_lojas: "23",
+        link_de_img: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSn-BCpyzgRZMIeM6yYdxxywN863OC27sbEk8YvPYFyjCW0Z0FMQFdAya9QZgkBMswW1vj9zTwsEdIxb7X24ZCA8SGeg-8D0q5m_ovkp7iEYUbCk-NFo9Ypuw",
+        N°_de_estrelas: "4,9"
+    }
+    8{
+        nome: "Teclado Bluetooth Xukinroy Ultra-slim Recarregável De 10 Polegadas",
+        preço: "R$104,00",
+        parcelado: "Ou 3X de R$34,68",
+        N°_de_lojas: "1",
+        link_de_img: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS8qdahqj3mgWpC2cOHVLxZXJV-gtu8VMYlgRz7Il6ARc5bgIatF1-U499gEmyH1OLvM1krNKQ2WCoW5MafuVMdnrBsMF3scbDd8Iq3BwdXpC61OQT4wBp9",
+        N°_de_estrelas: "4,6"
+    }
+    9{
+        nome: "eBook Teclado Gamer Semi Mecânico Multimídia Led Rgb Qwerty Antighosting Usb para Pc Notebook Xbox Series X S Ps4 Ps5",
+        preço: "R$38,00",
+        parcelado: "",
+        N°_de_lojas: "1",
+        link_de_img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRuVF51B2xS3FnyWk5D74mmX7sNczpDeDiKH1ysv5YiM6Ps6kuSsNarckx5GjknsN9qd1exgDQwisiQZc7-cyzoHvhq8j8XtmbgKReioRyU-dZXIZoJPekw7w",
+        N°_de_estrelas: "4,5"
+    }
+    10{
+        nome: "Teclado Mecanico Royal Kludge RK61 60% USB-C Switch Vermelho",
+        preço: "R$230,00",
+        parcelado: "",
+        N°_de_lojas: "10",
+        link_de_img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTm-rCISufQZNh2hPi7tLPgmyqFHI0HPt6FSZHvtODY6r6iztg6UJW4ItBn1dMLIA7LJoC5fCOcc4wluo_ZOU6GvxwXsJmCsqXxT2509Zhyi4EZOu2xY4qXoWc",
+        N°_de_estrelas: "4,6"
+    }
 ]
