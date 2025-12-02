@@ -112,10 +112,13 @@
   .QuadroProduto{
     border: solid grey;
     margin-left: 50px;
+    margin-bottom: 50px;
     border-radius: 20px;
     padding: 20px;
     text-align: left;
     cursor: pointer;
+    width: 250px;
+    height: 450px;
   }
   .coração{
     width: 30px;
